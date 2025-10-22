@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="UIUX_Form.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-logo">
+               <a href=""><img src="apple.png" alt="logo" title="Logo"></a>
+            </nav>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="">Homepage</a></li>
+                    <li><a href="">Generate Link</a></li>
+                    <li><a href="">Transaction</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="Form_Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+            <form action="Form_Login.html" class="form">
+
+                <div class="form-photo">
+                    <label for="file-upload" class="image-border"></label>
+                        <input type="file" id="file-upload" name="product-photo" accept="image/*" multiple>
+                    <br>
+                    <span>Upload Photo</span>
+                </div>
+                <div class="form-input">
+                    <div class="data-input">
+                        <label for="title">Title</label>
+                        <input type="text" name="title">
+                    </div>
+                    <div class="data-input">
+                        <label for="Description">Description</label>
+                        <textarea name="" id="Description" cols="21" rows="7"></textarea>
+                    </div>
+                    <div class="data-input">
+                        <label for="account">Account Number</label>
+                        <input type="text" name="account">
+                    </div>
+                    <div class="data-input">
+                        <label for="bank">Bank</label>
+                        <select name="bank" id="bank">
+                            <option value disabled selected>Select Bank</option>
+                            <option value="mandiri">Mandiri</option>
+                            <option value="bri">BCA</option>
+                            <option value="bri">BRI</option>
+                            <option value="bni">BNI</option>
+                        </select>
+                    </div>
+                    <div class="data-input">
+                        <label for="accholder">Account Holder</label>
+                        <input type="text" id="accholder">
+                    </div>
+                    <div class="data-input">
+                        <label for="transaction">Transaction</label>
+                        <input type="number" id="transaction" value="1">
+                        <p style="color: rgb(99, 99, 99);">*If the transaction is for 3 person, choose 3 from the drop-down list</p>
+                    </div>
+                    <div class="data-check">
+                        <label for="check1">Send to mobile phone</label>
+                        <input type="checkbox" id="check1">
+                    </div>
+                    <div class="data-check">
+                        <label for="check2">Send to Email</label>
+                        <input type="checkbox" id="check2">
+                    </div>
+                    <br>
+                    <div class="data-input">
+                        <label for="phone">Mobile Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="data-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <button type="submit" class="button"><a href="Form_order.html">Generate Link</a></button>
+                </div>
+            </form>                                        
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.header {
+    background: rgba(207, 206, 206, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.nav-logo img {
+    width: 100%;
+    max-width: 100px;
+    object-fit: contain;
+}
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+.nav-menu a:hover{
+    color: rgb(216, 116, 23);
+    font-size: 18px;
+}
+
+/*main data*/
+.main {
+    padding-top: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.form {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    gap: 40px;
+    padding: 20px;
+}
+.form-photo {
+    flex-basis: 35%;
+    padding: 10px;
+    text-align: center;
+}
+.pic {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    border: 2px dashed #b3b1b1; 
+    border-radius: 12px;
+    background-color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.image-border:hover {
+    background-color: #f0f0f0;
+}
+#file-upload {
+    display: none;
+}
+.image-border span {
+    font-size: 1.1em;
+    color: #704bd6;
+    margin-top: 10px;
+}
+
+.form-input {
+    flex-basis: 65%;
+    margin-top: 15px;
+}
+.data-input {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+}
+.data-input label {
+    margin-bottom: 5px;
+    flex-basis: 30%;
+    font-weight: bold;
+    color: #1a1818;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.data-input input, 
+.data-input select, 
+.data-input textarea {
+    flex-grow: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: auto; 
+}
+.data-check {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+/*tombol*/
+button a {
+    background-color: #da8e2a;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 11px 150px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button a:hover {
+    background-color: #e6630c;
+    color: #302f2f;
+}

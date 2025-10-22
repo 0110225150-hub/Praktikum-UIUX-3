@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="Form_order.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-logo">
+               <a href=""><img src="apple.png" alt="logo" title="Logo"></a>
+            </nav>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="">Homepage</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="Form_Login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+            <form action="UIUX3_Form.html" method="get" class="form">
+
+                <div class="form-photo">
+                        <img src="ip.png" alt="product" class="pic">
+                </div>
+                <div class="form-input">
+                    <div class="data-input">
+                        <label for="title">Title</label>
+                        <span>iPhone 17 Pro</span>
+                    </div>
+                    <div class="data-input">
+                        <label for="Description">Description</label>
+                        <span>Year: 2025</span>
+                        <br>
+                        <span>Dimensions: 150 x 71.9 x 8.8 mm</span>
+                        <br>
+                        <span>RAM: 12 GB (LPDDR5x)</span>
+                    </div>
+                    <div class="data-input">
+                        <label for="Amount">Total Amount</label>
+                        <span>IDR 25,000,000</span>
+                    </div>
+                    <div class="data-input">
+                        <label for="account">Pay to</label>
+                        <span>1570012266616 (Mandiri)</span>
+                    </div>
+                    <div class="data-input">
+                        <label for="bank">Payment Type</label>
+                        <select name="bank" id="bank">
+                            <option value disabled selected>Select Payment</option>
+                            <option value="Transfer">Transfer Bank</option>
+                            <option value="Qris">Qris</option>
+                            <option value="COD">COD</option>
+                        </select>
+                    </div>
+                    <div class="data-input">
+                        <label for="accholder">Account Holder</label>
+                        <input type="text" id="accholder">
+                    </div>
+                    <div class="data-input">
+                        <label for="accountNo">Account No</label>
+                        <input type="tel" id="accountNo">
+                    </div>
+                    <div class="data-check">
+                        <label for="check1">Send to mobile phone</label>
+                        <input type="checkbox" id="check1">
+                    </div>
+                    <div class="data-check">
+                        <label for="check2">Send to Email</label>
+                        <input type="checkbox" id="check2">
+                    </div>
+                    <br>
+                    <div class="data-input">
+                        <label for="phone">Mobile Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="data-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <button type="submit" class="button"><a href="">Order</a></button>
+                </div>
+            </form>                                        
+    </div>
+    
+    
+</body>
+</html>
