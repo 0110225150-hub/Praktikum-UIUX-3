@@ -1,0 +1,126 @@
+ /*style.css*/
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #D8CFA8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+/*content nya*/
+.summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px; 
+    text-align: justify;   
+}
+.summary-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.summary-title {
+    flex-grow: 1;
+}
+.summary-title h2 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.summary-text {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.summary-text, ul {
+    list-style: none;
+}
+
+/*content ke2*/
+.introduction {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.introduction p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*media*/
+.media {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.media-video {
+    flex: 1 1 48%;
+    height: auto;
+    min-width: 250px;
+}
+.media-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.media-photos {
+    flex: 1 1 30%;
+}
+.gallery {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.media-photos img {
+    width: 50%;
+    height: 235px;
+    padding: 0;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.media-attachment {
+    flex: 1 1 15%;
+}
+.media-attachment fieldset {
+    margin: 0;
+    max-width: 160px;
+    height: 235px;
+}
+.media-attachment ul {
+    list-style-type: disc;    
+}
+a {
+    color: #52372f;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+}
+a:hover span {
+    color: rgb(134, 134, 212);
+}
+.media-photos fieldset, .media-attachment fieldset {
+    border-radius: 5px;
+}
+
+
+
+
+
+
